@@ -1,0 +1,21 @@
+<div *ngIf='!isLoaded'>
+    <app-loader [percentFilled]='percentFilled'></app-loader>
+</div>
+
+<div *ngIf='isLoaded' mnFullpage [mnFullpageNavigation]='true' [mnFullpageKeyboardScrolling]='true' [mnFullpageOnLeave]='onLeave'
+    [mnFullpage]>
+
+    <div class='flex-box section fp-section'>
+        <img id='slide-img' *ngFor='let carouselItem of carousel; let i = index' [ngStyle]='{"background-image": "url(" + carouselItem.img + ")", "display": currentIndex === i ? "initial" : "none"}'
+        />
+        <span class='title'>La Vida de Dennis</span>
+        <span class='caption'>Scroll Down</span>
+    </div>
+    <app-slide *ngFor='let slide of slides' [slide]='slide' class='flex-box section fp-section'></app-slide>
+    
+    <div class='flex-box section fp-section end'>
+        <span class='title sendoff'>¡Gracias Por Visitar Mi Sitio Web!</span>
+        <img id='end-img' src='../../assets/images/malatesta.jpg'/>
+        <div class='btn' (click)='return()'>Regresar al Sitio Principio</div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+img {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.textBox {
+    text-align: left;
+}
+
+.title {
+    font-family: Wensley;
+    font-size: 75px;
+    font-weight: bold;
+    padding: 0 75px 10% 75px;
+}
+
+.description {
+    font-size: 18px;
+    padding: 0 200px 0 75px;
+}
+
+:host {
+    width: 100%;
+    height: 100%;
+}
