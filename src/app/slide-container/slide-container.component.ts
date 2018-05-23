@@ -17,6 +17,7 @@ export class SlideContainerComponent implements OnInit {
   percentFilled: number = 0;
 
   isLoaded: boolean = false;
+
   interval: number = 1000;
   carouselRunner: any;
 
@@ -29,7 +30,6 @@ export class SlideContainerComponent implements OnInit {
     preloadImages(this.slides.concat(this.carousel as any), 'img')
     .subscribe(loadedImages => {
       this.percentFilled = Math.ceil((loadedImages / (this.slides.length + this.carousel.length)) * 100);
-      console.log(this.percentFilled);
 
       if (this.percentFilled === 100) {
         this.startCarousel();
@@ -39,7 +39,6 @@ export class SlideContainerComponent implements OnInit {
   }
 
   onLeave = (index: number, nextIndex: number, direction: string) => {
-    console.log(index, nextIndex, direction);
     if (index === 1 && direction === 'down') {
       clearInterval(this.carouselRunner);
       return;

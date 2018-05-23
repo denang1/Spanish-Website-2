@@ -7,7 +7,7 @@ import { Slide } from '../interfaces/slide.interface';
   styleUrls: ['./slide.component.css']
 })
 export class SlideComponent implements AfterViewInit {
-  imgStyle: any;
+  imgStyle: any = {};
 
   @Input()
   slide: Slide
@@ -21,7 +21,6 @@ export class SlideComponent implements AfterViewInit {
     if (window.outerWidth < 500) {
       const textBoxHeight: number = this.textBoxElement.nativeElement.clientHeight;
       const imgHeight: string = `calc(100% - ${textBoxHeight.toString()}px)`;
-      console.log(imgHeight);
 
       this.imgStyle = {
         height: imgHeight

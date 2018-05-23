@@ -52,6 +52,24 @@
     font-size: 60px;
 }
 
+.dennis-head {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    animation: dennis-animation 10s linear infinite;
+}
+
+@keyframes dennis-animation {
+    0% { transform: rotate(0deg) translateX(25vw) translateY(5vh) rotate(0deg); }
+    25% { transform: rotate(90deg) translateX(25vw) translateY(5vh) rotate(-90deg); }
+    50% { transform: rotate(180deg) translateX(25vw) translateY(5vh) rotate(-180deg); }
+    75% { transform: rotate(270deg) translateX(25vw) translateY(5vh) rotate(-270deg); }
+    100% { transform: rotate(360deg) translateX(25vw) translateY(5vh) rotate(-360deg); }
+}
+
 span.title {
     text-align: center;
 }

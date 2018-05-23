@@ -20,7 +20,6 @@ export class Loader implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
 
     this.progressLevelTransform = `translate(0px, ${100-changes.percentFilled.currentValue}%)`
-    console.log(JSON.stringify(changes), this.progressLevelTransform);
   }
 
 }
