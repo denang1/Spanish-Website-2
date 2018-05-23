@@ -9,7 +9,8 @@
         <img id='slide-img' *ngFor='let carouselItem of carousel; let i = index' [ngStyle]='{"background-image": "url(" + carouselItem.img + ")", "display": currentIndex === i ? "initial" : "none"}'
         />
         <span class='title'>La Vida de Dennis</span>
-        <span class='caption'>Scroll Down</span>
+        <img class='scroll-icon' src='assets/images/scroll.gif'/>
+        <!-- <span class='caption'>Scroll Down</span> -->
     </div>
     <app-slide *ngFor='let slide of slides' [slide]='slide' class='flex-box section fp-section'></app-slide>
 

@@ -30,6 +30,15 @@
     background-color: black;
 }
 
+.scroll-icon {
+    position: absolute;
+    width: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 .title {
     position: absolute;
     z-index: 2;
@@ -37,10 +46,10 @@
     left: 0%;
     right:0%;
     margin: auto;
-    font-family: Wensley;
+    font-family: serif;
     color: white;
-    font-weight: bold;
-    font-size: 80px;
+    font-weight: lighter;
+    font-size: 60px;
 }
 
 span.title {
@@ -142,6 +151,10 @@ span.sendoff {
         margin: auto;
         display: flex;
         justify-content: center;
+    }
+
+    .title {
+        font-size: 120px;
     }
     
 }

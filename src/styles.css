@@ -22,8 +22,4 @@ html {
     display: none !important;
 }
 
-@font-face {
-    font-family: Wensley;
-    src: url('./assets/fonts/WensleyDemo.ttf');
-}
 
