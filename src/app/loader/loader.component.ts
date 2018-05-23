@@ -9,9 +9,8 @@ export class Loader implements OnInit, OnChanges {
 
   progressLevelTransform: string;
 
-
   @Input()
-  percentFilled:number = 0;
+  percentFilled: number = 0;
 
   constructor() { }
 

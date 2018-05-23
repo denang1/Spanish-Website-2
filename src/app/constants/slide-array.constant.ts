@@ -9,7 +9,7 @@ export const slideArray: Slide[] = [
     {
         title: 'MI CULTURA',
         description: 'Mi familia es de Bulgaria. Yo soy la primera persona nacido en los Estados Unidos en mi familia. La cultura búlgara es muy importante para mi familia. Nosotros hablamos el búlgaro en casa. Es especialmente importante hablar el búlgaro en casa porque mi abuelo no sabe hablar en inglés. Además, mi familia todavía cocina la comida búlgara casi todos los días. Mis comidas favoritas son de Bulgaria. Las celebraciones búlgaras son importantes para mi familia también. Unos ejemplos son los días de nombres y la fiesta de Baba Marta.',
-        img: 'assets/images/bulgaria.jpg'
+        img: 'assets/images/culture.jpg'
     },
     {
         title: 'MIS PASATIEMPOS',
@@ -29,12 +29,12 @@ export const slideArray: Slide[] = [
     {
         title: 'MIS VIAJES',
         description: 'Me encanta viajar y explorar el mundo. He viajado a varios países. El verano pasado, viajé a Costa Rica para estudiar la conservación medioambiental en un programa de CIEE. Pase un mes en Costa Rica y aprendí mucho sobre la cultura y la diversidad de especies en el país. Cuando estaba allí, yo vi cocodrilos, monos, serpientes, delfines y mucho más. También, conoce nuevos amigos. Quiero viajar a Costa Rica otra vez en el futuro porque era increíble. Además, he viajado a Bulgaria con mi familia para mantener la conexión con mi herencia búlgara. Vi el pueblo, Plovdiv, donde se creaban mis padres y exploré los regiones en las montañas. Deseo viajar a más países en el futuro.',
-        img: 'assets/images/travel.jpg'
+        img: 'assets/images/costarica.jpg'
     },
     {
         title: 'MI COMIDA FAVORITA',
         description: 'Una de mis grandes amores es la comida. Me encantan muchos tipos de comida. La comida búlgara es mi favorita. Hay muchos platos deliciosos como musaka, kefta y shopska salata. También me gusta la comida italiana. Pizza, lasaña y espaguetis son algunos platos que me gustan. El helado chocolate es mi postre favorito. Pero también me gustan las galletas, los pasteles, y el cereal. Aparte de ser delicioso, es importante que la comida sea saludable. Me gusta la comida saludable sin ingredientes artificiales como el pollo con arroz.',
-        img: 'assets/images/breakfast.jpg'
+        img: 'assets/images/food.jpg'
     },
     {
         title: 'LA CONSERVACIÓN',
@@ -44,7 +44,7 @@ export const slideArray: Slide[] = [
     {
         title: 'MI PERSONALIDAD',
         description: 'Pienso que soy un chico muy sociable y gracioso. Siempre digo chistes en mis clases. Al mismo tiempo, soy trabajador y ambicioso. Tengo gran expectaciones para yo mismo pero no tengo miedo de cometer errores. Me gusta tomar riesgos en mi vida. A veces, puedo ser un perfeccionista. Eso puede ser un problema cuando trabajo en grupos. Además, soy amable y simpático. Me gusta ayudar a las personas con sus problemas. También soy atrevido— me gusta experimentar y tratar cosas nuevas.',
-        img: 'assets/images/explore.jpg'
+        img: 'assets/images/adventure.jpg'
     },
     {
         title: 'MIS ACTIVIDADES',

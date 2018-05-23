@@ -1,15 +1,11 @@
-<div class='textBox'>
+<div #textBoxEl class='textBox'>
   <div class='title'>
     {{slide.title}}
   </div>
 
-  <br>
-
   <div class='description'>
-      {{slide.description}}
+    {{slide.description}}
   </div>
+
 </div>
-
-<br>
-
-<img src='{{slide.img}}'/>
+<img [ngStyle]='imgStyle' src='{{slide.img}}' />

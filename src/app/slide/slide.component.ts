@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, AfterViewInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { Slide } from '../interfaces/slide.interface';
 
 @Component({
@@ -6,13 +6,27 @@ import { Slide } from '../interfaces/slide.interface';
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.css']
 })
-export class SlideComponent implements OnInit {
+export class SlideComponent implements AfterViewInit {
+  imgStyle: any;
+
   @Input()
   slide: Slide
 
+  @ViewChild('textBoxEl')
+  textBoxElement: ElementRef;
+
   constructor() { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    if (window.outerWidth < 500) {
+      const textBoxHeight: number = this.textBoxElement.nativeElement.clientHeight;
+      const imgHeight: string = `calc(100% - ${textBoxHeight.toString()}px)`;
+      console.log(imgHeight);
+
+      this.imgStyle = {
+        height: imgHeight
+      };
+    }
   }
 
 }

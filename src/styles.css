@@ -18,6 +18,10 @@ html {
     overflow: hidden;
 }
 
+#fp-nav {
+    display: none !important;
+}
+
 @font-face {
     font-family: Wensley;
     src: url('./assets/fonts/WensleyDemo.ttf');

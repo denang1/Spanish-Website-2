@@ -1,3 +1,3 @@
-export  interface CarouselItem {
+export interface CarouselItem {
     img: string;
 }
